@@ -1,0 +1,37 @@
+﻿@model HomeVM
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model.images)
+        {
+            <div class="news-list">
+                <a href="#" target="_blank" class="news-inner">
+                    <div class="news-image">
+                        <div class="new-img">
+
+                            <img class="zaraimg" src="~/image/@item.ImageUrl" alt="">
+
+
+                        </div>
+                        <div class="new-content" style="height: 180px;">
+                            <div class="date">
+                                <div class="date-time">
+                                    <div class="date-day">New</div>
+
+                                </div>
+                                <div class="date-hour">Coat</div>
+                            </div>
+                            <div class="title">
+                                 WOOL BLEND TAILORED COAT
+                                <span id="price">Price: 350$</span>
+                            </div>
+                            <div class="description"></div>
+                        </div>
+                    </div>
+
+                </a>
+
+            </div>
+        }
+       </div>
+ </div>
